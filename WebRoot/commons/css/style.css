@@ -1,0 +1,306 @@
+body {
+	margin: 0px; padding: 0px; color: rgb(92, 92, 92); font-family: "ËÎÌå"; font-size: 12px; background-color: rgb(243, 243, 243);
+}
+a {
+	color: rgb(92, 92, 92); text-decoration: none;
+}
+#top .nav a {
+	color: rgb(255, 255, 255); font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px;
+}
+a:hover {
+	color: rgb(204, 0, 0); text-decoration: none;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+li {
+	list-style: none; margin: 0px; padding: 0px;
+}
+img {
+	border: 0px currentColor;
+}
+.clear {
+	clear: both;
+}
+#top {
+	margin: auto; width: 980px;
+}
+#main {
+	margin: auto; width: 980px;
+}
+#bottom {
+	margin: auto; width: 980px;
+}
+.logo {
+	background: url("../images/logo.jpg") no-repeat top; width: 354px; height: 94px; float: left;
+}
+.txtbg {
+	height: 32px; line-height: 32px; float: right;
+}
+.topxian {
+	background: url("../images/topxian.png") no-repeat top; width: 980px; height: 14px;
+}
+#top .txtbg a {
+	padding: 0px 10px; color: rgb(1, 87, 162); font-family: "Î¢ÈíÑÅºÚ";
+}
+.by {
+	background: url("../images/by.jpg") no-repeat top; width: 302px; height: 37px; clear: right; margin-top: 20px; float: right;
+}
+#top .nav a {
+	color: rgb(255, 255, 255); font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px;
+}
+#top .nav a:hover {
+	color: rgb(255, 255, 255); font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px;
+}
+.bannner {
+	margin: 15px 0px; z-index: -99999;
+}
+.ggkuang {
+	border: 1px solid rgb(191, 191, 191);
+}
+.mainbg1 {
+	margin: 10px 20px 10px 0px; width: 290px; float: left;
+}
+.mainbg2 {
+	margin: 10px 20px 10px 0px; width: 360px; float: left;
+}
+.mainbg3 {
+	margin: 10px 0px; width: 290px; float: right;
+}
+.btx li {
+	background: url("../images/btsdhqh.png") repeat-x top; height: 30px; line-height: 30px; padding-left: 10px; vertical-align: bottom;
+}
+.lanmu {
+	height: 25px; line-height: 25px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px; float: left; display: block;
+}
+.more {
+	height: 25px; line-height: 25px; margin-top: 10px; float: right; display: block;
+}
+.nmainbg1 {
+	background-color: rgb(243, 243, 243);
+}
+.nmainbg3 {
+	background-color: rgb(243, 243, 243);
+}
+.xian {
+	margin: 10px 0px; border-bottom-color: rgb(92, 92, 92); border-bottom-width: 2px; border-bottom-style: solid;
+}
+#navh {
+	background: url("../images/daoh.png"); width: 980px; height: 39px; line-height: 39px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px; list-style-type: none;
+}
+#navh a {
+	text-align: center; display: block;
+}
+#navh a:link {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#navh a:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#navh a:hover {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#navh li {
+	width: 160px; float: left;
+}
+#navh li a:hover {
+	
+}
+#navh li ul {
+	left: -999em; width: 180px; text-align: left; line-height: 27px; list-style-type: none; position: absolute; z-index: 1000;
+}
+#navh li ul li {
+	background: rgb(12, 127, 188); width: 180px; border-bottom-color: rgb(86, 86, 86); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+#navh li ul a {
+	width: 180px; text-align: left; padding-left: 24px; font-family: "ËÎÌå"; font-size: 13px; display: block;
+}
+#navh li ul a:link {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#navh li ul a:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#navh li ul a:hover {
+	background: rgb(67, 175, 233); width: 156px; color: rgb(255, 255, 255); font-weight: normal; text-decoration: none; display: block;
+}
+#navh li:hover ul {
+	left: auto;
+}
+#navh li.sfhover ul {
+	left: auto;
+}
+.nymainleft {
+	margin: 10px 0px; width: 200px; float: left;
+}
+.nymainright {
+	margin: 10px 0px; width: 750px; float: right;
+}
+.xmglleft {
+	margin: 10px 0px; width: 780px; float: left;
+}
+.xmglright {
+	margin: 10px 0px; width: 180px; float: right;
+}
+.nxlmbg a {
+	background: url("../images/xmjslei.jpg") no-repeat; margin: 5px 10px; width: 137px; height: 30px; color: rgb(255, 255, 255); line-height: 30px; text-indent: 40px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px; display: block;
+}
+.nxlmbgl a {
+	background: url("../images/xmgllei.jpg") no-repeat; margin: 5px 0px; width: 120px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px; display: block;
+}
+.rightbgz {
+	background: url("../images/rightbgzj.jpg") repeat-y top; width: 180px;
+}
+.leftbgz {
+	background: url("../images/leftzj.png") repeat-y top; width: 690px;
+}
+.dleftbgz {
+	background: url("../images/dleftzj.png") repeat-y top; width: 877px;
+}
+.fourbf {
+	background: url("../images/fourbgsh.png") no-repeat top; width: 269px; height: 37px; text-align: center; color: rgb(255, 255, 255); line-height: 37px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px;
+}
+.nzlmx a {
+	background: url("../images/xmgllei.jpg") no-repeat; margin: 5px 0px; width: 80px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px; display: block;
+}
+.nzlmxd a {
+	background: url("../images/xmglleid.jpg") no-repeat; margin: 5px 0px; width: 160px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px; display: block;
+}
+.paginator {
+	font: 12px/normal Arial, Helvetica, sans-serif; margin: 0px; padding: 10px 0px; text-align: center; font-size-adjust: none; font-stretch: normal;
+}
+.paginator a {
+	padding: 1px 6px; border: 1px solid rgb(204, 204, 204); text-decoration: none; margin-right: 2px;
+}
+.paginator a:visited {
+	padding: 1px 6px; border: 1px solid rgb(204, 204, 204); text-decoration: none;
+}
+.paginator .cpb {
+	padding: 1px 6px; border: currentColor; font-size: 13px; font-weight: bold;
+}
+.paginator a:hover {
+	border-color: rgb(204, 0, 0); color: rgb(232, 210, 134); text-decoration: none; background-color: rgb(204, 0, 0);
+}
+.cp {
+	margin: 8px 5px 0px; border: 1px solid rgb(204, 204, 204); width: 235px; text-align: center; float: left; display: inline;
+}
+.synews li {
+	margin: 0px 15px; height: 30px; line-height: 30px; vertical-align: bottom; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.synew {
+	height: 30px; line-height: 30px; float: left; display: block;
+}
+.sytime {
+	height: 30px; line-height: 30px; float: right; display: block;
+}
+.xiax {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.wxzlbg {
+	background: url("../images/wxzlbgbtn.png") repeat-x top; height: 30px; color: rgb(255, 255, 255); line-height: 30px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px;
+}
+.wxzlbg a {
+	height: 30px; color: rgb(255, 255, 255); line-height: 30px; font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px;
+}
+.STYLE1 {
+	font-family: "Î¢ÈíÑÅºÚ"; font-size: 14px;
+}
+.STYLE2 {
+	color: rgb(232, 28, 28); font-family: "Î¢ÈíÑÅºÚ";
+}
+.STYLE3 {
+	color: rgb(21, 103, 237); font-family: "Î¢ÈíÑÅºÚ";
+}
+.STYLE4 {
+	color: rgb(222, 37, 202); font-family: "Î¢ÈíÑÅºÚ";
+}
+.STYLE5 {
+	color: rgb(233, 154, 17); font-family: "Î¢ÈíÑÅºÚ";
+}
+.STYLE6 {
+	font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px;
+}
+.STYLE7 {
+	color: rgb(200, 30, 17); font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px;
+}
+.STYLE8 {
+	text-align: center; color: rgb(0, 0, 0); font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px; font-weight: bold;
+}
+.STYLE9 {
+	color: rgb(0, 0, 0); font-family: "Î¢ÈíÑÅºÚ"; font-size: 15px; font-weight: bold;
+}
+.STYLEt9 {
+	color: rgb(0, 0, 0); font-family: "Î¢ÈíÑÅºÚ"; font-size: 18px; font-weight: bold;
+}
+.STYLE10 {
+	color: rgb(0, 0, 0); font-size: 14px; font-weight: bold;
+}
+.STYLE11 {
+	color: rgb(61, 178, 255); font-family: "Î¢ÈíÑÅºÚ";
+}
+.STYLE12 {
+	text-align: center; color: rgb(1, 87, 162); font-family: "Î¢ÈíÑÅºÚ"; font-size: 12px; font-weight: bold;
+}
+.focus_t1 {
+	padding: 1px; border: 1px solid rgb(204, 198, 198); width: 269px !important; float: left;
+}
+.focus_tbg1 {
+	background: url("../images/fourbgsh.png") no-repeat; width: 269px; height: 37px;
+}
+.focus_tbg2 {
+	background: url("../images/fourbgshby.png") repeat-x; height: 37px;
+}
+#focus_but1 {
+	width: 65px; height: 30px !important; text-align: center; line-height: 30px; letter-spacing: 5px; padding-top: 2px; font-size: 14px; font-weight: bold; float: left;
+}
+#focus_but2 {
+	width: 65px; height: 30px !important; text-align: center; line-height: 30px; letter-spacing: 5px; padding-top: 2px; font-size: 14px; font-weight: bold; float: left;
+}
+#focus_but3 {
+	width: 65px; height: 30px !important; text-align: center; line-height: 30px; letter-spacing: 5px; padding-top: 2px; font-size: 14px; font-weight: bold; float: left;
+}
+#focus_but4 {
+	width: 65px; height: 30px !important; text-align: center; line-height: 30px; letter-spacing: 5px; padding-top: 2px; font-size: 14px; font-weight: bold; float: left;
+}
+#focus_but1 {
+	font-size: 14px; margin-right: 3px;
+}
+#focus_but2 {
+	font-size: 14px; margin-right: 3px;
+}
+#focus_but3 {
+	font-size: 14px; margin-right: 3px;
+}
+#focus_but3 {
+	width: 65px;
+}
+.focus_butc1 {
+	background: url("../images/fourbgshby.png") repeat-x;
+}
+.focus_butc2 {
+	background: url("../images/fourbgshys.png") no-repeat; color: rgb(255, 255, 255);
+}
+.focus_butc2 a:link {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+.focus_butc2 a:visited {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+.focus_butc2 a:active {
+	color: rgb(255, 255, 255); font-size: 14px; text-decoration: none;
+}
+.focus_butc2 a:hover {
+	color: rgb(238, 238, 238); font-size: 14px; text-decoration: none;
+}
+#focus_text2 {
+	display: none;
+}
+#focus_text3 {
+	display: none;
+}
+#focus_text4 {
+	display: none;
+}

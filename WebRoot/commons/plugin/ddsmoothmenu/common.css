@@ -1,0 +1,27 @@
+.back
+{
+background: url('image/nav_hover_background.png');
+}
+.main_nav_item {
+	text-align:center;
+	margin:1px 0 0 0;
+	padding:10px 0 8px 0;
+	position: relative;
+	display: inline;
+	float: left;
+	/*background: url('nav_background.png') repeat-x;	*/
+}
+.search{
+
+}
+.searchText{
+position: relative;
+float: left;
+top:7px;
+width:180px;
+}
+.searchIcon{
+position: relative;
+float: left;	
+top:8px;
+}

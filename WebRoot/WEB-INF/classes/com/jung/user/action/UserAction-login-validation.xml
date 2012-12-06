@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC 
+  "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+  "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd"> 
+<validators> 
+<!-- 校验器类型如下：
+1. requiredstring 必填字符串校验器，要求必须有值且长度大于0，即不能是空字符串。默认会去掉字符串前后空格
+2. stringlength     字符串长度校验器，用于检验字段中字符串长度是否在指定的范围，参数 : maxLength，minLength
+3. int 					整数校验器,可以配置整数在指定的范围内,参数: min,max
+4.double 		双精度校验器，可以配置双精度数在指定的范围内。参数：
+					 minInclusive(指定字段数值所接受的最小值)，maxInclusive，minExclusive(指定字段数值被排除的最小值)，minExclusive
+5. date 				日期校验器，可以配置日期在指定的范围内。参数: min,max
+6.expression       表达式校验器，它是一个非字段校验器，当参数expression计算的值为true时，校验通过，否则返回提示。该参数使用OGNL表达式
+7.fieldexpression 字段表达式校验器，当参数expression计算的值为true时，校验通过，否则返回提示
+7.url 					网址校验器，要求被检查的字段如果非空，则必须是合法的URL地址。
+8. email						email 邮件地址校验器，要求被检查的字段如果非空，则必须是合法的邮件地址。
+9. visitor				复合类型校验器.该校验器用来校验Action中定义的复合类型属性，支持简单的复合类型、数组类型。Map等集合类型。
+ -->
+<field name="user.userName"> 
+		<field-validator type="requiredstring"> 
+		<param name="trim">true</param><!-- 用于指定是否在校验之前对字符串进行整理 -->
+		<message>必填</message>
+		</field-validator> 
+</field> 
+<field name="user.password"> 
+		<field-validator type="requiredstring"> 
+		<param name="trim">true</param>
+		<message>必填</message>
+		</field-validator> 
+</field> 
+</validators> 

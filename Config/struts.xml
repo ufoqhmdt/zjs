@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 设置当前为开发阶段，可以打印出详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 设置当 struts.xml 文件更改后，系统自动重新加载该文件 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- 指定 Web 应用的默认编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 禁用浏览器缓存静态内容 -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 设置默认视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 设置由 Spring 来管理 action 对象 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 该属性指定Struts 2文件上传中整个请求内容允许的最大字节数。10M -->
+	<constant name="struts.multipart.maxSize" value="10485760" />
+	
+	<constant name="struts.action.excludePattern" value="/background/news/jsp/.*" />
+	<include file="conf/struts/struts_common.xml"></include>
+	<include file="conf/struts/struts_user.xml"></include>
+	<include file="conf/struts/struts_news.xml"></include>
+	<include file="conf/struts/struts_user_competence.xml"></include>
+</struts>    

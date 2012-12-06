@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="employee" namespace="/employee" extends="json-default">
+
+		<!-- 获取销售代表列表 -->
+		<action name="list" class="employeeAction" method="list">
+			<result name="success" type="json">
+			</result>
+		</action>
+
+		<!-- 添加销售代表-->
+		<action name="add" class="employeeAction" method="addEmployee">
+			<result name="success" type="json">
+			</result>
+		</action>
+
+		<!-- 删除销售代表 -->
+		<action name="delete" class="employeeAction" method="deleteEmployee">
+			<result name="success" type="json">
+			</result>
+		</action>
+
+		<!-- 根据ID获取销售代表 -->
+		<action name="get" class="employeeAction" method="getEmployeeById">
+			<result name="success" type="json">
+			</result>
+		</action>
+	</package>
+</struts>

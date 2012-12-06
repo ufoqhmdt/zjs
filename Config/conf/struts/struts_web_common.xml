@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="userAction" class="com.jung.user.action.UserAction" singleton="false"/>
+	<bean id="doctorAction" class="com.jung.doctor.action.DoctorAction" singleton="false"/>
+	<bean id="employeeAction" class="com.jung.employee.action.EmployeeAction" singleton="false"/>
+	<bean id="userCompetenceAction" class="com.jung.competence.action.UserCompetenceAction" singleton="false"></bean>
+	
+	
+	
+	<bean id="jqueryGridServiceFactory" class="com.jung.common.JqueryGridServiceFactory">
+		<property name="jqueryGridServices">
+			<list>
+<!--				<ref bean="userService"></ref>-->
+<!--				<ref bean="newsService"></ref>-->
+<!--				<ref bean="doctorService"></ref>-->
+<!--				<ref bean="employeeService"></ref>-->
+					<ref bean="userCompetenceService"></ref>
+					<ref bean="roleForUserService"></ref>
+			</list>
+		</property>
+	</bean>
+	<bean id="jqueryGridAction" class="com.jung.common.JqueryGridAction"
+		singleton="false">
+		<property name="factory" ref="jqueryGridServiceFactory" />
+	</bean>
+</beans>

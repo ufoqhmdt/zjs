@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="news" namespace="/news" extends="json-default">
+
+		<!-- 获取新闻列表 -->
+		<action name="list" class="newsAction" method="list">
+			<result name="success" type="json">
+			</result>
+		</action>
+
+		<!-- 添加新闻 -->
+		<action name="add" class="newsAction" method="addNews">
+			<result name="success" type="json">
+				<param name="ignoreHierarchy">false</param>
+				<param name="includeProperties">result,model.*,errorMsgs.*</param>
+			</result>
+		</action>
+
+		<!-- 删除新闻 -->
+		<action name="delete" class="newsAction" method="deleteNews">
+			<result name="success" type="json">
+				<param name="ignoreHierarchy">false</param>
+				<param name="includeProperties">result,model.*,errorMsgs.*</param>
+			</result>
+		</action>
+
+		<!-- 根据ID获取新闻 -->
+		<action name="get" class="newsAction" method="findNewsById">
+			<result name="success" type="json">
+				<param name="ignoreHierarchy">false</param>
+				<param name="includeProperties">result,model.*,errorMsgs.*</param>
+			</result>
+		</action>
+		<!-- 根据ID获取新闻 -->
+		<action name="updateNews" class="newsAction" method="findNewsById">
+			<result name="success">/background/news.jsp</result>
+		</action>
+		<!--获取只读新闻  -->
+		<action name="lookReadOnlyNews" class="newsAction" method="findNewsById">
+			<result name="success">/background/newsReadOnly.jsp</result>
+		</action>
+		<action name="updateMagazine" class="newsAction" method="findNewsById">
+			<result name="success">/background/magazine.jsp</result>
+		</action>
+		<action name="updatePolicy" class="newsAction" method="findNewsById">
+			<result name="success">/background/policySeek.jsp</result>
+		</action>
+		<!-- 根据ID获取新闻前台用 -->
+		<action name="lookDetail*" class="newsAction" method="findNewsById">
+			<result name="success">${url}</result>
+		</action>
+		<!-- 获取最新的新闻列表 -->
+		<action name="newest*" class="newsAction" method="findNewest">
+			<result name="success">${url}</result>
+		</action>
+		<!-- 转向政策查询二级页面或详细页面 -->
+		<action name="redirectToPolicyList" class="newsAction" method="redirectToPolicyList">
+			<result name="success">${url}</result>
+		</action>
+		<!-- 转向搜索所有新闻页面 -->
+		<action name="searchAllNews" class="newsAction" method="searchAllNews">
+			<result name="success">/allNews/searchResult.jsp</result>
+		</action>
+		<!-- 关键字搜索 start -->
+			<!-- 新闻 -->
+			<action name="searchNews" class="newsAction" method="searchAllNews">
+			<result name="success">/allNews/searchResultDetail.jsp</result>
+			</action>
+			<!-- 政策查询 -->
+			<!--<action name="searchPolicySeek" class="newsAction" method="searchAllNews">
+			<result name="success">/legalConsult/policy_seek_list.jsp</result>
+			</action>
+			--><!-- 支点分析 -->
+			<!--<action name="searchPivotAnalyse" class="newsAction" method="searchAllNews">
+			<result name="success">/legalConsult/pivot_analyse.jsp</result>
+			</action>
+		--><!-- 关键字搜索 end -->
+		<!-- 文件上传 -->
+		<action name="upload" class="newsAction" method="uploadFile">
+			<result name="success">/close.jsp</result>
+			<result name="input">/error.jsp</result>
+		</action>
+		<!-- Delete items  -->
+		<action name="deleteNewses" class="newsAction" method="deleteNewses">
+			<result name="success" type="json">
+				<param name="ignoreHierarchy">false</param>
+				<param name="includeProperties">newAddResumeId,result,model.*,errorMsgs.*</param>
+			</result>
+		</action>
+
+	</package>
+</struts>

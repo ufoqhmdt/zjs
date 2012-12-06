@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="utf-8">
+        <title>文献资料管理</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <style type="text/css">
+            body {
+                padding-top: 128px;
+            }
+        </style>
+        <link href="css/bootstrap-github.css" rel="stylesheet" type="text/css" />
+        <link href="css/prettify.css" rel="stylesheet" type="text/css" />
+        <link href="css/smoothness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/skins/tango/skin.css" rel="stylesheet" type="text/css" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="js/vendor/html5.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    </head>
+
+    <body>
+        <div id="viewport"></div>
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div id="zhai-header" style="position: relative;margin-bottom: 60px;padding-top: 20px;">
+
+                        <div class="span3">
+                            <h1 class="logo"><a href=""><img src="img/logo.png" alt="文献宅及送"></a></h1>
+                        </div>
+
+                        <div class="menu span9 pull-right" style="margin-left: 30px;">
+                            <ul class="menu-list" style="margin: 0px;position: relative;left: 570px;">
+                                <li class="menu-item">
+                                    <a href="//gathercontent.com/how-it-works">设为首页</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="//gathercontent.com/features">加入收藏</a>
+                                </li>
+                                <li class="menu-item highlight-item">
+                                    <a href="//gathercontent.com/signup">Get Started Now</a>
+                                </li>
+                            </ul>
+                            <form class="navbar-search" style="margin:0 0 15px 586px;">
+                                <input type="text" class="search-query" placeholder="输入搜索关键字">
+                                <a href="//gathercontent.com/login" class="btn btn-inverse btn-mini">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                        <a class="brand" href="#">中国医师协会</a>
+                        <div class="nav-collapse collapse">
+
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="indexTemplate.html"><i class="icon-th-large"></i>网站首页</a>
+                                </li>
+                                <li class>
+                                    <a href="#about"><i class="icon-barcode"></i>项目介绍</a>
+                                </li>
+                                <li>
+                                    <a href="projectManageTemplate.html"><i class="icon-camera"></i>项目管理</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i>积分兑换 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="productTemplate.html"><i class="icon-glass"></i>积分兑换</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>兑换产品管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>兑换统计</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-eject"></i>文献资料 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="literatureTemplate.html"><i class="icon-glass"></i>文献资料查看</a>
+                                        </li>
+                                        <li>
+                                            <a href="literaturePeriodManagement.html"><i class="icon-glass"></i>文献期数管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="literatureCategory.html"><i class="icon-glass"></i>文献类别管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="literatureManagement.html"><i class="icon-glass"></i>文献资料管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="literatureUploadManagement.html"><i class="icon-glass"></i>文献上传管理</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-warning-sign"></i>活动公告栏 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>活动公告栏</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>活动公告管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>网站公告管理</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-resize-small"></i>人员管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>医师管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>销售代表管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>人员调度管理</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-retweet"></i>题目管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>题目管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>答题统计</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-resize-vertical"></i>权限管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>管理员帐户管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>角色管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>用户角色分配</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>角色权限分配</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="container" id="container">
+                <div class="row" style="height:200px;text-align:center; margin-top:20px;">
+                    <div class="span4">
+                                                文献标题:<input type="text" style="width:300px;"/>                   
+                    </div>
+                    <div class="span2">
+                                                文献类别:<select style="width:100px;">
+                             <option>A</option>  
+                             <option>B</option>  
+                             <option>C</option>  
+                             <option>D</option> 
+                             <option>E</option> 
+                             <option>F</option>   
+                             <option>G</option> 
+                             <option>H</option> 
+                             <option>I</option> 
+                             <option>J</option> 
+                             <option>弥可保</option> 
+                             <option>奥力宝</option>  
+                             <option>快如妥</option>
+                             <option>产品文献答案</option>                    
+                          </select>
+                    </div>
+                    <div class="span2">
+                                                文献期数:<select style="width:100px;">
+                             <option>2012-12</option>  
+                             <option>2012-11</option>  
+                             <option>2012-10</option>  
+                             <option>2012-09</option> 
+                             <option>2012-08</option> 
+                             <option>2012-07</option>                      
+                          </select>
+                    </div>
+                    <div class="span2">
+                                                排序位置: <input type="text" style="width:100px;"/>
+                    </div>
+                    <div class="span12">
+                      <a class="btn" href="#literatureTabmkb">确认添加</a>
+                    </div>
+             </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row links-horizontal">
+                    <div class="span12">
+                        <ul>
+                            <li>
+                                咨询电话
+                            </li>
+                            <li>
+                                <a href="#tel">021-51717520</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span12">
+                        <ul>
+                            <li>
+                                工作时间
+                            </li>
+                            <li>
+                                <a href="#tel">周一至周五 9:30--18:30</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span12">
+                        <ul>
+                            <li>
+                                地址
+                            </li>
+                            <li>
+                                <a href="#tel">上海市黄浦区新桥路68号新桥大厦1825室</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span12">
+                        <ul>
+                            <li>
+                                邮箱
+                            </li>
+                            <li>
+                                <a href="#tel">ecihhc@126.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="span12">
+                        <a href="http://twitter.com/gathercontent" class="twitter-link">Follow us on Twitter</a>
+                    </div>
+
+                </div>
+
+                <div style="color:white;">
+                    Copyright 2012 汉思科营销策划有限责任公司 All rights reserved 沪ICP备12010259号<a href="#"></a>
+                </div>
+                <div style="float: right;text-align: right;margin-top: -50px;">
+                    <a href="#" ><img src="img/logo.png" alt="Gather Content"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!--  javascript ================================================== -->
+        <script src="./js/vendor/jquery-1.8.3.min.js"></script>
+        <script src="./js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="./js/vendor/bootstrap.js"></script>
+        <script src="./js/vendor/bootstrap-carousel.js"></script>
+        <script src="./js/vendor/bootstrap-tab.js"></script>
+
+    </body>
+</html>

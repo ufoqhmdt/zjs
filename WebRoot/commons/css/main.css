@@ -1,0 +1,452 @@
+#viewport {
+        z-index:-1000;
+        -webkit-perspective: 10000; 
+        -moz-perspective: 10000px; 
+        -o-perspective: 10000; 
+        position: absolute;
+        height: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-image: linear-gradient(bottom, rgb(69,132,180) 28%, #ffffff 100%);
+        background-image: -o-linear-gradient(bottom, rgb(69,132,180) 28%, #ffffff 100%);
+        background-image: -moz-linear-gradient(bottom, rgb(69,132,180) 28%, #ffffff 100%);
+        background-image: -webkit-linear-gradient(bottom, rgb(69,132,180) 28%, #ffffff 100%);
+        background-image: -ms-linear-gradient(bottom, rgb(69,132,180) 28%, #ffffff 100%);
+
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0.28, #ffffff),
+            color-stop(0.64, rgb(36, 152, 229))
+        );
+}
+#container{
+/*    position: absolute;*/
+/*        left: 0;*/
+        top: 0;
+        margin-top:0px;
+/*        margin: 10px;*/
+/*        padding: 20px;*/
+/*        width: 400px;*/
+        background-color: rgba( 0, 0, 0, .1 );
+        border-radius: 0px;
+}
+.hero-unit{
+    padding: 0px;
+    background-color: rgba( 0, 0, 0, .4 );
+}
+/*.span4 {
+    width: 311px;
+}
+
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
+    width:1024px;
+}*/
+
+.btn {
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+    padding: 4px 10px 4px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-shadow: 0 0px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    padding: 8px 12px 6px 12px;
+    background: #3aa3e6;
+    background: -moz-linear-gradient(top, #87c6ee, #3aa3e6 2%, #028fe8);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #87c6ee), color-stop(.01, #3aa3e6), to(#028fe8));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    border: 0px;
+    border-bottom-color: #b3b3b3;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    *margin-left: .3em;
+    outline: none;
+}
+
+.btn:hover {
+    text-shadow: 0 1px 1px #6f3a02;
+    color: #fff;
+    background: #f48423;
+    background: -moz-linear-gradient(top, #ffdf9e, #f5b026 2%, #f48423);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffd683), color-stop(.01, #f5b026), to(#f48423));
+    cursor: pointer;
+    border: 0px;
+}
+a {
+color: black;
+text-decoration: none;
+}
+
+.hero-unit p {
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+#homepageInfo{
+	padding-left:20px;
+	padding-right:10px;
+}
+
+#homepageInfo  .span4 i.bookmarking{
+        height: 145px;
+width: 300px;
+display: block;
+        }
+#homepageInfo  .span4 {
+       float: left;
+    margin-left: 20px;
+        }
+
+
+
+
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 1170px;
+}
+.navbar-fixed-top {
+  top: 0;
+}
+
+#zhai-header [class*="span"] {
+float: left;
+margin-left: 0px;
+}
+
+.menu-list{
+	list-style-type: none;
+/*	float: right;*/
+}
+
+.menu .menu-item {
+	display: inline;
+	font-size: 13px;
+	margin-left: 30px;
+}
+
+
+
+.footer {
+background-color: #37A1E5;
+padding: 20px 0px;
+min-width: 1100px;
+text-align: center;
+}
+.footer ul {
+list-style: none;
+color: #F5A725;
+font-size: 13px;
+}
+.footer .links-horizontal li {
+float: left;
+margin-left: 20px;
+}
+
+.list-widget ul {
+list-style: none;
+margin: 15px -15px 0;
+padding: 0px 10px;
+position: relative;
+}
+.list-widget {
+padding: 15px;
+position: relative;
+background: #fff;
+}
+.list-widget ul li {
+margin: 10px 10px;
+/*height: 20px;*/
+overflow: hidden;
+}
+.list-widget .fav {
+background-position: 0;
+height: 16px;
+width: 16px;
+margin: 2px 0px 0 3px;
+float: left;
+}
+
+#regionProgressContent { list-style-type: none; margin: 0; padding: 0; width: 370px; }
+	#regionProgressContent li { margin: 0px 3px 20px 0; padding: 1px; float: left; width: 180px; height: 60px; font-size: 1em; text-align: center; }
+	#regionProgressContent li>img{
+		margin-top:12px;
+	}
+	#regionProgressContent li>span{
+		margin-left:20px;
+		top: 8px;
+		position: relative;
+		font-weight: 800;
+	}
+	
+	.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background-color: #2C9EE6;
+}
+	
+	
+	.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 1090px;
+    padding: 10px 40px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+width: 1090px;
+height: 50px;
+}
+
+
+.navbar .brand {
+float: left;
+display: block;
+padding: 12px 20px 12px 25px;
+margin-left: -20px;
+font-size: 13px;
+font-weight: 200;
+line-height: 1;
+color: #ffffff;
+}
+
+#literatureContentList>ul a{
+	color: #ffffff;
+}
+#literatureDatepickerWraper{
+	float:left;
+	margin-left: 50px;
+}
+
+#literatureContentList{
+	margin-left: 80px;
+}
+
+#headerTools a{
+color: white;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

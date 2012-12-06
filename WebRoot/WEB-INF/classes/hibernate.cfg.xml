@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+	<session-factory>
+
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数 -->
+		<property name="c3p0.acquire_increment">5</property>
+		<!-- 每隔120秒检查连接池里的空闲连接 ，单位是秒-->
+		<property name="c3p0.idle_test_period">100</property>
+		<!-- 最大连接数 -->
+		<property name="c3p0.max_size">100</property>
+		<!-- 最大的PreparedStatement的数量 -->
+		<property name="c3p0.max_statements">100</property>
+		<!-- 最小连接数 -->
+		<property name="c3p0.min_size">10</property>
+		<!-- 获得连接的超时时间,如果超过这个时间,会抛出异常，单位毫秒 -->
+		<property name="c3p0.timeout">100</property>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="hibernate.jdbc.use_get_generated_keys">
+			false
+		</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!--  Add by: yinyu -->
+		<mapping class="com.jung.news.model.News" />
+		<mapping class="com.jung.doctor.model.Doctor"/>
+		<mapping class="com.jung.employee.model.Employee"/>
+		<mapping class="com.jung.region.model.Region"/>
+		<mapping class="com.jung.product.model.Product"/>
+		<mapping class="com.jung.productexchangerecord.model.ProductExchangeRecord"/>
+		
+		<!-- 用户权限  Add by: yinyu -->
+		<mapping class="com.jung.competence.model.Menu"/>
+		<mapping class="com.jung.competence.model.RoleLinkUser"/>
+		<mapping class="com.jung.competence.model.RoleForUser"/>
+		<mapping class="com.jung.competence.model.RoleForUserLinkMenu"/>
+	</session-factory>
+
+</hibernate-configuration>

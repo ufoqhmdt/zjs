@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="common" namespace="/common" extends="json-default">
+		<action name="entityList" class="jqueryGridAction">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>

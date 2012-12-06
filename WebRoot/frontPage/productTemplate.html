@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="utf-8">
+		<title>文献宅及送</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<style type="text/css">
+			body {
+				padding-top: 128px;
+			}
+		</style>
+		<link href="css/bootstrap-github.css" rel="stylesheet" type="text/css" />
+		<link href="css/prettify.css" rel="stylesheet" type="text/css" />
+		<link href="css/smoothness/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+		<link href="css/skins/tango/skin.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="js/vendor/html5.js"></script>
+		<![endif]-->
+
+		<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+	</head>
+
+	<body>
+		<div id="viewport"></div>
+		<header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <div id="zhai-header" style="position: relative;margin-bottom: 60px;padding-top: 20px;">
+
+                        <div class="span3">
+                            <h1 class="logo"><a href=""><img src="img/logo.png" alt="文献宅及送"></a></h1>
+                        </div>
+
+                        <div class="menu span9 pull-right" style="margin-left: 30px;">
+                            <ul class="menu-list" style="margin: 0px;position: relative;left: 570px;">
+                                <li class="menu-item">
+                                    <a href="//gathercontent.com/how-it-works">设为首页</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="//gathercontent.com/features">加入收藏</a>
+                                </li>
+                                <li class="menu-item highlight-item">
+                                    <a href="//gathercontent.com/signup">Get Started Now</a>
+                                </li>
+                            </ul>
+                            <form class="navbar-search" style="margin:0 0 15px 586px;">
+                                <input type="text" class="search-query" placeholder="输入搜索关键字">
+                                <a href="//gathercontent.com/login" class="btn btn-inverse btn-mini">搜索</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                        <a class="brand" href="#">中国医师协会</a>
+                        <div class="nav-collapse collapse">
+
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="indexTemplate.html"><i class="icon-th-large"></i>网站首页</a>
+                                </li>
+                                <li class>
+                                    <a href="#about"><i class="icon-barcode"></i>项目介绍</a>
+                                </li>
+                                <li>
+                                    <a href="projectManageTemplate.html"><i class="icon-camera"></i>项目管理</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i>积分兑换 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="productTemplate.html"><i class="icon-glass"></i>积分兑换</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>兑换产品管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>兑换统计</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-eject"></i>文献资料 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="literatureTemplate.html"><i class="icon-glass"></i>文献资料查看</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>文献资料管理</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-warning-sign"></i>活动公告栏 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>活动公告栏</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>活动公告管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>网站公告管理</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-resize-small"></i>人员管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>医师管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>销售代表管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>人员调度管理</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-retweet"></i>题目管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>题目管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>答题统计</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-resize-vertical"></i>权限管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>管理员帐户管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>角色管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>用户角色分配</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-glass"></i>角色权限分配</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+		<section class="container" id="container" style="color: black">
+			<div class="row" style="margin-top: 20px;" id="literatureContent">
+				<div class="span12">
+
+						<i class="bookmarking" style="background: url('img/icon-organized.png') no-repeat;"></i>
+						<ul id="tab" class="nav nav-tabs">
+							<li class="active">
+								<a href="#home" data-toggle="tab">产品列表</a>
+							</li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade active in" id="home">
+								<table class="table table-striped table-bordered table-condensed" id="integralTable">
+									<thead>
+										<tr>
+											<th>产品名称</th>
+											<th>需要积分</th>
+											<th>发布日期</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>100</td>
+											<td>产品1</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="modal" id="myModal1" style="display: none">
+
+							<div class="modal-header">
+								<a class="close" data-dismiss="modal">关闭</a>
+								<h3>产品1(需要积分80)</h3>
+							</div>
+							<div class="modal-body">
+								<img src="img/l3.png" alt="">
+								<div style="">
+									<h4>国家像需要空气一样需要变革</h4>
+									<p>
+										据戈尔巴乔夫基金会新闻处通报，俄总统梅德韦杰夫今天向前苏联总统戈尔巴乔夫颁发圣徒安德烈·佩尔沃兹万内勋章。戈尔巴乔夫在受勋时表示感谢，并称很激动。他坦言，对自己做过的事情问心无愧。他强调，他进行改革不是为了赢得敬重和荣誉，而是因为认识到，“国家像需要空气一样需要变革”。他承认犯过错误，并至今还在为这些错误而烦恼。但他认为：“短短几年所走过的路，使专制的过去永远成为了历史。”
+									</p>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="btn">确认兑换</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div id="zhai-blogroll" style="margin-top: 15px">
+					<ul id="zhaicarousel" class="jcarousel-skin-tango span12"></ul>
+				</div>
+
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row links-horizontal">
+					<div class="span12">
+						<ul>
+							<li>
+								咨询电话
+							</li>
+							<li>
+								<a href="#tel">021-51717520</a>
+							</li>
+						</ul>
+					</div>
+					<div class="span12">
+						<ul>
+							<li>
+								工作时间
+							</li>
+							<li>
+								<a href="#tel">周一至周五 9:30--18:30</a>
+							</li>
+						</ul>
+					</div>
+					<div class="span12">
+						<ul>
+							<li>
+								地址
+							</li>
+							<li>
+								<a href="#tel">上海市黄浦区新桥路68号新桥大厦1825室</a>
+							</li>
+						</ul>
+					</div>
+					<div class="span12">
+						<ul>
+							<li>
+								邮箱
+							</li>
+							<li>
+								<a href="#tel">ecihhc@126.com</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="span12">
+						<a href="http://twitter.com/gathercontent" class="twitter-link">Follow us on Twitter</a>
+					</div>
+
+				</div>
+
+				<div style="color:white;">
+					Copyright 2012 汉思科营销策划有限责任公司 All rights reserved 沪ICP备12010259号<a href="#"></a>
+				</div>
+				<div style="float: right;text-align: right;margin-top: -50px;">
+					<a href="#" ><img src="img/logo.png" alt="Gather Content"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!--  javascript ================================================== -->
+		<script src="./js/vendor/jquery-1.8.3.min.js"></script>
+		<script src="./js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
+		<script src="./js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="./js/vendor/bootstrap.js"></script>
+		<script src="./js/vendor/bootstrap-carousel.js"></script>
+		<script src="./js/vendor/bootstrap-modal.js"></script>
+		<script src="./js/vendor/bootstrap-tab.js"></script>
+		<script src="./js/vendor/jquery.jcarousel.min.js"></script>
+		<script>
+			var mycarousel_itemList = [{
+				url : "img/ad01.png",
+				title : "Flower1"
+			}, {
+				url : "img/ad02.png",
+				title : "Flower2"
+			}, {
+				url : "img/ad03.png",
+				title : "Flower3"
+			}, {
+				url : "img/ad04.png",
+				title : "Flower4"
+			}, {
+				url : "img/ad01.png",
+				title : "Flower1"
+			}, {
+				url : "img/ad02.png",
+				title : "Flower2"
+			}, {
+				url : "img/ad03.png",
+				title : "Flower3"
+			}, {
+				url : "img/ad04.png",
+				title : "Flower4"
+			}, {
+				url : "img/ad01.png",
+				title : "Flower1"
+			}, {
+				url : "img/ad02.png",
+				title : "Flower2"
+			}, {
+				url : "img/ad03.png",
+				title : "Flower3"
+			}, {
+				url : "img/ad04.png",
+				title : "Flower4"
+			}, {
+				url : "img/ad01.png",
+				title : "Flower1"
+			}, {
+				url : "img/ad01.png",
+				title : "Flower1"
+			}];
+
+			function mycarousel_itemLoadCallback(carousel, state) {
+				for (var i = carousel.first; i <= carousel.last; i++) {
+					if (carousel.has(i)) {
+						continue;
+					}
+
+					if (i > mycarousel_itemList.length) {
+						break;
+					}
+
+					carousel.add(i, mycarousel_getItemHTML(mycarousel_itemList[i - 1]));
+				}
+			};
+
+			function mycarousel_getItemHTML(item) {
+				return '<img src="' + item.url + '" width="75" height="75" alt="' + item.url + '" />';
+			};
+
+			jQuery(function() {
+				$("#regionProgressContent").sortable();
+				$("#regionProgressContent").disableSelection();
+
+				$("#regionProgressContent li").addClass("btn");
+				$('.tabs a:last').tab('show');
+
+				jQuery('#zhaicarousel').jcarousel({
+					scroll : 1,
+					auto : 3,
+					wrap : 'circular',
+					size : mycarousel_itemList.length,
+					itemLoadCallback : {
+						onBeforeAnimation : mycarousel_itemLoadCallback
+					}
+				});
+
+				$("#literatureDatepicker").datepicker();
+
+				$("#integralTable tr").each(function() {
+					$(this).click(function() {
+						$('#myModal1').modal({
+							keyboard : false
+						});
+					})
+				})
+			})
+		</script>
+
+	</body>
+</html>

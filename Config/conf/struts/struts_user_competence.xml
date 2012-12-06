@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+   <package name="user_competence"  namespace="/user_competence"  extends="json-default">
+       <action name="getAllMenu" class="userCompetenceAction" method="getAllMenus">
+           <result name="success" type="dispatcher">/basicInfo/competence/addRoleForUser.jsp</result>
+            <result name="fail" type="dispatcher">/basicInfo/competence/noMenuForUser.jsp</result>
+       </action>
+       <action name="addRole" class="userCompetenceAction" method="addRoleForUser">
+           <result name="addRoleForUserSuccess" type="dispatcher">/basicInfo/competence/roleForUserList.jsp</result>
+       </action>
+       <action name="deleteRoleForUser" class="userCompetenceAction" method="deleteRoleForUser">
+         <result name="success" type="dispatcher">/basicInfo/competence/roleForUserList.jsp</result>
+       </action>
+       <action name="displayRoleOwnedMenus" class="userCompetenceAction" method="displayRoleOwnedMenus">
+           <result name="success" type="dispatcher">/basicInfo/competence/displayModifyRoleMenu.jsp</result>
+       </action>
+       <action name="modifyRoleOwnedMenus" class="userCompetenceAction" method="modifyRoleOwnedMenus">
+           <result name="success" type="dispatcher">/basicInfo/competence/roleForUserList.jsp</result>
+       </action>
+       <action name="displayUserOwnedRoles" class="userCompetenceAction" method="displayUserOwnedRoles">
+           <result name="success" type="dispatcher">/basicInfo/competence/displayRoleUser.jsp</result>
+           <result name="forwardModify" type="redirectAction">displayModifyUserOwnedRoles?userID=${userID}</result>
+           <result name="fail" type="dispatcher">/basicInfo/competence/noRoleForUser.jsp</result>
+       </action>
+       <action name="displayAssignedRoleMenus" class="userCompetenceAction" method="displayAssignedRoleMenus">
+           <result name="success" type="dispatcher">/basicInfo/competence/displaySeletedRoleMenuForUser.jsp</result>
+       </action>
+       <action name="assignRoleForUser" class="userCompetenceAction" method="assignRoleForUser">
+           <result name="success" type="dispatcher">/basicInfo/user/user.jsp</result>
+       </action>
+       <action name="displayMinChangeAssignedRoleMenus" class="userCompetenceAction" method="displayMinChangeAssignedRoleMenus">
+           <result name="success" type="dispatcher">/basicInfo/competence/displayMinChangeSelectedRoleMenuForUser.jsp</result>
+       </action>
+       <action name="assignRoleForUserAfterMinChange" class="userCompetenceAction" method="assignRoleForUserAfterMinChange">
+           <result name="success" type="dispatcher">/basicInfo/user/user.jsp</result>
+       </action>
+        <action name="displayModifyUserOwnedRoles" class="userCompetenceAction" method="displayModifyUserOwnedRoles">
+           <result name="success" type="dispatcher">/basicInfo/competence/displayModifyUserOwnedRoles.jsp</result>
+       </action>
+        <action name="modifiyUserRole" class="userCompetenceAction" method="modifiyUserRole">
+           <result name="success" type="dispatcher">/basicInfo/competence/displayModifyUserRoleMenus.jsp</result>
+       </action>
+        <action name="modifyUserRoleSecondStep" class="userCompetenceAction" method="modifyUserRoleSecondStep">
+           <result name="success" type="dispatcher">/basicInfo/user/user.jsp</result>
+       </action>
+        <action name="checkUserRoleName" class="userCompetenceAction" method="checkUserRoleName">
+           <result  type="json"></result>
+           <result  name="fail" type="json"></result>
+       </action>
+   </package>
+</struts>
