@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="user_competence" location="323,270" size="2310,945">
+    <action name="getAllMenu" location="65,47" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addRoleForUser.jsp" />
+      </result>
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="noMenuForUser.jsp" />
+      </result>
+    </action>
+    <action name="addRole" location="65,162" size="150,41">
+      <result name="addRoleForUserSuccess">
+        <resourceEdge source="addRoleForUserSuccess" routing="0" target="roleForUserList.jsp" />
+      </result>
+    </action>
+    <action name="deleteRoleForUser" location="310,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="roleForUserList.jsp" />
+      </result>
+    </action>
+    <action name="displayRoleOwnedMenus" location="555,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="displayModifyRoleMenu.jsp" />
+      </result>
+    </action>
+    <action name="modifyRoleOwnedMenus" location="905,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="roleForUserList.jsp" />
+      </result>
+    </action>
+    <action name="displayUserOwnedRoles" location="1220,141" size="150,83">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="displayRoleUser.jsp" />
+      </result>
+      <result name="forwardModify" />
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="noRoleForUser.jsp" />
+      </result>
+    </action>
+    <action name="displayAssignedRoleMenus" location="1220,337" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="displaySeletedRoleMenuForUser.jsp" />
+      </result>
+    </action>
+    <action name="assignRoleForUser" location="1220,512" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="user.jsp" />
+      </result>
+    </action>
+    <action name="displayMinChangeAssignedRoleMenus" location="1465,512" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="displayMinChangeSelectedRoleMenuForUser.jsp" />
+      </result>
+    </action>
+    <action name="assignRoleForUserAfterMinChange" location="1465,687" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="user.jsp" />
+      </result>
+    </action>
+    <action name="displayModifyUserOwnedRoles" location="2095,687" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="displayModifyUserOwnedRoles.jsp" />
+      </result>
+    </action>
+    <action name="modifiyUserRole" location="2095,862" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="displayModifyUserRoleMenus.jsp" />
+      </result>
+    </action>
+    <action name="modifyUserRoleSecondStep" location="1850,862" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="user.jsp" />
+      </result>
+    </action>
+    <action name="checkUserRoleName" location="1605,852" size="150,62">
+      <result name="success" />
+      <result name="fail" />
+    </action>
+  </package>
+  <webResource name="addRoleForUser.jsp" path="/basicInfo/competence/addRoleForUser.jsp" location="324,115" size="150,55" />
+  <webResource name="noMenuForUser.jsp" path="/basicInfo/competence/noMenuForUser.jsp" location="9,290" size="150,55" />
+  <webResource name="roleForUserList.jsp" path="/basicInfo/competence/roleForUserList.jsp" location="1167,10" size="150,55" />
+  <webResource name="displayModifyRoleMenu.jsp" path="/basicInfo/competence/displayModifyRoleMenu.jsp" location="791,115" size="150,55" />
+  <webResource name="displayRoleUser.jsp" path="/basicInfo/competence/displayRoleUser.jsp" location="2669,395" size="150,55" />
+  <webResource name="noRoleForUser.jsp" path="/basicInfo/competence/noRoleForUser.jsp" location="1483,115" size="150,55" />
+  <webResource name="displaySeletedRoleMenuForUser.jsp" path="/basicInfo/competence/displaySeletedRoleMenuForUser.jsp" location="2692,570" size="150,55" />
+  <webResource name="user.jsp" path="/basicInfo/user/user.jsp" location="1782,1270" size="150,55" />
+  <webResource name="displayMinChangeSelectedRoleMenuForUser.jsp" path="/basicInfo/competence/displayMinChangeSelectedRoleMenuForUser.jsp" location="2691,745" size="150,55" />
+  <webResource name="displayModifyUserOwnedRoles.jsp" path="/basicInfo/competence/displayModifyUserOwnedRoles.jsp" location="2695,920" size="150,55" />
+  <webResource name="displayModifyUserRoleMenus.jsp" path="/basicInfo/competence/displayModifyUserRoleMenus.jsp" location="2699,1095" size="150,55" />
+</Struts2Diagram>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="region" namespace="/region" extends="json-default">
+
+		<action name="add" class="regionAction" method="add">
+			<result name="success" type="redirect">
+			/region/region.jsp
+			</result>
+			<result name="input">/region/regionManage.jsp</result>
+		</action>
+			<action name="prepareUpdate" class="regionAction" method="prepareUpdate">
+			<result name="success">
+			/region/regionManage.jsp
+			</result>
+		</action>
+			<action name="view" class="regionAction" method="view">
+			<result name="success" >
+			/region/regionView.jsp
+			</result>
+		</action>
+			<action name="delete" class="regionAction" method="delete">
+			<result name="success" type="json">
+			</result>
+		</action>
+		<!-- 获取地区列表 -->
+		<action name="list" class="regionAction" method="list">
+			<result name="success" type="json">
+			</result>
+		</action>
+	</package>
+</struts>

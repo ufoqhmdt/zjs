@@ -1,0 +1,49 @@
+/* CSS Document */
+
+body{
+
+background:url(../images/background.jpg);
+background-color:#cdecff;
+background-repeat:no-repeat;
+}
+.head{
+width:1048px;
+height:120px;
+position:relative;
+top:20px;
+margin: 0 auto;	
+}
+.userstate{
+ margin-left:400px;
+ }
+.contain{ 
+position:relative;
+top:20px;
+width:1048px; 
+min-height:1000px;
+height: 100%;
+background-color:#FFFFFF; 
+margin: 0 auto;	
+}
+.bottom{
+width:1048px;
+height:46px;
+position:relative;
+margin: 0 auto;
+margin-top:80px;
+    }
+    
+.bottomright{
+	width:1048px;
+    height:46px;
+    background:url(../images/right.png);
+    background-repeat:no-repeat;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align:center;
+    font: bold 17px/46px Arial, Helvetica, sans-serif;	
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+    color: #fff;
+    
+}
