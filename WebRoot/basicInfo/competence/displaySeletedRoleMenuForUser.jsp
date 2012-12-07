@@ -8,8 +8,7 @@
 			href="<%=path%>/basicInfo/competence/css/demo.css" rel="stylesheet">
 			<link type="text/css" rel="stylesheet"
 				href="<%=path%>/basicInfo/competence/css/zTreeStyle/zTreeStyle.css" />
-			<script type="text/javascript"
-				src="<%=path%>/commons/js/jquery-1.7.2.min.js">
+		
 			</script>
 		<script type="text/javascript"
 			src="<%=path%>/basicInfo/competence/js/jquery.ztree.core-3.2.js">
@@ -40,22 +39,13 @@ $(document).ready(function(){
                 $.fn.zTree.init($("#treeDemo"), setting, zNodes);
                 zTree = $.fn.zTree.getZTreeObj("treeDemo");
             });
-           function tj(){
-        	 //  alert($(":hidden[name=rfcName]").val());
-        	 //  alert($(":hidden[name=rfcMenus]").val());
-           }
         </script>
-		<style type="text/css">
-ul.ztree {
-	
-}
-</style>
 	</head>
 
 	<body>
-<%--		<%@include file="/commons/jsp/page_head.jsp"%>--%>
+	<%@include file="/commons/jsp/common_header.jsp"%>
 		<div class="contain">
-			<div class="content_wrap" style="margin: auto;">
+			<div class="content_wrap" style="margin: auto;padding-top:140px">
 				<div class="zTreeDemoBackground left" style="margin: auto;">
 					<ul id="treeDemo" class="ztree">
 
@@ -67,11 +57,10 @@ ul.ztree {
 						value="${roleForUserMenus}" />
 					<input type="hidden" name="roleName" value="${roleName}" />
 					<input type="hidden" name="userID" value="${userID}" />
-
 					<input type="submit" value="确定" />
 				    <input type="button" value="返回" onclick="javascript:history.go(-1)"/>
 				</form>
 			</div>
-<%--			<%@include file="/commons/jsp/page_buttom.jsp"%>--%>
+		<%@include file="/commons/jsp/common_footer.jsp"%>
 	</body>
 </html>

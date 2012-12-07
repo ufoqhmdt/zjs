@@ -20,7 +20,7 @@
 		<property name="c3p0.min_size">10</property>
 		<!-- 获得连接的超时时间,如果超过这个时间,会抛出异常，单位毫秒 -->
 		<property name="c3p0.timeout">100</property>
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		<property name="hibernate.jdbc.use_get_generated_keys">
 			false
 		</property>

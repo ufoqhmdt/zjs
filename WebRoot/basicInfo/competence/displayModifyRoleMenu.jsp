@@ -80,8 +80,9 @@ ul.ztree {
 
 	<body>
 <%--		<%@include file="/commons/jsp/page_head.jsp"%>--%>
+<%@include file="/commons/jsp/common_header.jsp"%>
 		<div class="contain">
-			<div class="content_wrap" style="margin: auto;">
+			<div class="content_wrap" style="margin: auto;padding-top:120px">
 				<div style="margin: auto; margin-top: 10px;">
 					<form
 						action="<%=path%>/user_competence/modifyRoleOwnedMenus.action"
@@ -104,6 +105,7 @@ ul.ztree {
 
 			</div>
 			<br />
+			<br />
 			<div style="margin: auto; width: 600px; margin-top: 10px;">
 <%--				<label style="font-size: 12px; width: 200px;">--%>
 <%--					修改角色是否影响使用该角色的用户--%>
@@ -118,5 +120,6 @@ ul.ztree {
 			</div>
 		</div>
 <%--		<%@include file="/commons/jsp/page_buttom.jsp"%>--%>
+<%@include file="/commons/jsp/common_footer.jsp"%>
 	</body>
 </html>

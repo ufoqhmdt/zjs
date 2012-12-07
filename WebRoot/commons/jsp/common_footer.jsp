@@ -46,7 +46,7 @@
 </footer>
 
 <!--  javascript ================================================== -->
-<script src="${ctxPath}/commons/js/vendor/jquery-1.8.3.min.js"></script>
+<%--<script src="${ctxPath}/commons/js/vendor/jquery-1.8.3.min.js"></script>--%>
 <script src="${ctxPath}/commons/js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
 <script src="${ctxPath}/commons/js/vendor/modernizr-2.6.2.min.js"></script>
 <script src="${ctxPath}/commons/js/vendor/bootstrap.js"></script>

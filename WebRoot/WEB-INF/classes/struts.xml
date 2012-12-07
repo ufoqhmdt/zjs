@@ -21,4 +21,7 @@
 	<include file="conf/struts/struts_user.xml"></include>
 	<include file="conf/struts/struts_news.xml"></include>
 	<include file="conf/struts/struts_user_competence.xml"></include>
+	<include file="conf/struts/struts_region.xml"></include>
+	<include file="conf/struts/struts_doctor.xml"></include>
+	<include file="conf/struts/struts_employee.xml"></include>
 </struts>    

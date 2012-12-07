@@ -4,9 +4,7 @@
 <html>
 	<head>
 		<meta content="text/html; charset=UTF-8" http-equiv="content-type"></meta>
-		<script type="text/javascript"
-			src="<%=path%>/commons/js/jquery-1.7.2.min.js">
-		</script>
+	
 		<script type="text/javascript"
 			src="<%=path%>/basicInfo/competence/js/jquery.ztree.core-3.2.js">
 		</script>
@@ -53,9 +51,9 @@ ul.ztree {
 	</head>
 
 	<body>
-<%--		<%@include file="/commons/jsp/page_head.jsp"%>--%>
+<%@include file="/commons/jsp/common_header.jsp"%>
 		<div class="contain">
-			<div class="content_wrap" style="margin: auto;">
+			<div class="content_wrap" style="margin: auto; padding-top:140px">
 
 				<div class="zTreeDemoBackground left" style="margin: auto;">
 					<ul id="treeDemo" class="ztree">
@@ -75,6 +73,6 @@ ul.ztree {
 					 <input type="button" value="返回" onclick="javascript:history.go(-1)"/>
 				</form>
 			</div>
-<%--			<%@include file="/commons/jsp/page_buttom.jsp"%>--%>
+			<%@include file="/commons/jsp/common_footer.jsp"%>
 	</body>
 </html>

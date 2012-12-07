@@ -3,16 +3,15 @@
 <%@include file="/commons/jsp/common_head.jsp"%>
 <html>
   <head>
-	<link type="text/css" rel="stylesheet" href="<s:url value='/basicInfo/company/css/company_list.css'/>" />
 	<script
 			src="<%=path%>/basicInfo/competence/js/user_competence.js"
 			type="text/javascript">
 		</script>
-		<script type="text/javascript" src="<s:url value='/commons/js/commonSelectForm.js'/>"></script>
   </head>
   
   <body>
 <%--    <%@include file="/commons/jsp/page_head.jsp"%>--%>
+  <%@include file="/commons/jsp/common_header.jsp"%>
     <div class="contain">
     
     <!-- serach start -->
@@ -109,6 +108,7 @@ jQuery("#roleForUserList")
 </script>
 </div>
   </div>
+   <%@include file="/commons/jsp/common_footer.jsp"%>
 <%--    <%@include file="/commons/jsp/page_buttom.jsp"%>--%>
   </body>
 </html>

@@ -5,15 +5,11 @@
 <struts>
 	<package name="doctor" namespace="/doctor" extends="json-default">
 
-		<!-- 获取医师列表 -->
-		<action name="list" class="doctorAction" method="list">
-			<result name="success" type="json">
-			</result>
-		</action>
 
 		<!-- 添加医师 -->
 		<action name="add" class="doctorAction" method="addDoctor">
-			<result name="success" type="json">
+			<result name="success" type="redirect">
+			/doctor/doctor.jsp
 			</result>
 		</action>
 
@@ -23,9 +19,14 @@
 			</result>
 		</action>
 
-		<!-- 根据ID获取医师 -->
-		<action name="get" class="doctorAction" method="getDoctorById">
-			<result name="success" type="json">
+		<action name="prepareUpdate" class="doctorAction" method="prepareUpdate">
+			<result name="success">
+			/doctor/doctorEdit.jsp
+			</result>
+		</action>
+		<action name="update" class="doctorAction" method="update">
+			<result name="success"  type="redirect">
+			/doctor/doctor.jsp
 			</result>
 		</action>
 	</package>

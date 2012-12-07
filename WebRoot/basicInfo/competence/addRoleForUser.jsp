@@ -103,8 +103,9 @@ ul.ztree {
 
 	<body>
 <%--		<%@include file="/commons/jsp/page_head.jsp"%>--%>
+  <%@include file="/commons/jsp/common_header.jsp"%>
 		<div class="contain">
-			<div class="content_wrap" style="margin: auto;">
+			<div class="content_wrap" style="margin: auto;padding-top: 100px;">
 				<div style="margin: auto; margin-top: 10px;">
 					<form action="<%=path%>/user_competence/addRole.action"
 						id="menuForm">
@@ -125,6 +126,7 @@ ul.ztree {
 			<input style="cursor: pointer" type="button" value="返回"
 				onclick="javascript:history.go(-1)" />
 		</div>
+		    <%@include file="/commons/jsp/common_footer.jsp"%>
 <%--		<%@include file="/commons/jsp/page_buttom.jsp"%>--%>
 	</body>
 </html>

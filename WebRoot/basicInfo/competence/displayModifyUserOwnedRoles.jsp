@@ -6,9 +6,6 @@
 	<head>
 		<meta content="text/html; charset=UTF-8" http-equiv="content-type"></meta>
 	    <link type="text/css" href="<%=path %>/basicInfo/competence/css/demo.css" rel="stylesheet">
-		<script type="text/javascript"
-			src="/DMS/commons/js/jquery-1.7.2.min.js">
-</script>
 		<script type="text/javascript">
 function qd() {
 	var rolecID = new Array();
@@ -61,9 +58,9 @@ label {
 	</head>
 
 	<body>
-<%--		<%@include file="/commons/jsp/page_head.jsp"%>--%>
+<%@include file="/commons/jsp/common_header.jsp"%>
 		<div class="contain">
-			<div style="margin: auto; width: 500px;">
+			<div style="margin: auto; width: 500px; padding-top:140px">
 				<form action="" method="post">
 					<label>
 						用户名称：
@@ -73,14 +70,13 @@ label {
 					<label>
 						绑定角色&nbsp;&nbsp;&nbsp;&nbsp;
 					</label>
-					<br />
+					
 					<c:forEach items="${roleForUsers}" var="rfc">
 						<input type="checkbox" name="roleID" id="${rfc.roleID}"
 							value="${rfc.roleID}" />${rfc.roleSimp}<br />
 					</c:forEach>
 
 					<input type="button" value="确定" onclick="qd()" />
-<%--					<input type="button" value="微调" onclick="wt()" />--%>
 					<input type="button" value="返回" onclick="javascript:history.go(-1)" />
 				</form>
 				<form action="" method="post" id="fm">
@@ -95,6 +91,6 @@ label {
 			<div style="height: 220px">
 			
 			</div>
-<%--			 <%@include file="/commons/jsp/page_buttom.jsp"%>--%>
+<%@include file="/commons/jsp/common_footer.jsp"%>
 	</body>
 </html>

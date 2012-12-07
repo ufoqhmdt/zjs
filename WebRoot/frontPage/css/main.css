@@ -91,7 +91,7 @@
     border: 0px;
 }
 a {
-color: black;
+color: #0088cc;
 text-decoration: none;
 }
 
@@ -169,14 +169,14 @@ margin-left: 0px;
 
 
 .footer {
-background-color: #37A1E5;
+background-color: #252525;
 padding: 20px 0px;
 min-width: 1100px;
 text-align: center;
 }
 .footer ul {
 list-style: none;
-color: #F5A725;
+color: rgb(133, 128, 128);
 font-size: 13px;
 }
 .footer .links-horizontal li {
@@ -258,10 +258,6 @@ color: #ffffff;
 
 #literatureContentList{
 	margin-left: 80px;
-}
-
-#headerTools a{
-color: white;
 }
 /* ==========================================================================
    Helper classes

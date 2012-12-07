@@ -7,7 +7,7 @@
             <result name="fail" type="dispatcher">/basicInfo/competence/noMenuForUser.jsp</result>
        </action>
        <action name="addRole" class="userCompetenceAction" method="addRoleForUser">
-           <result name="addRoleForUserSuccess" type="dispatcher">/basicInfo/competence/roleForUserList.jsp</result>
+           <result name="addRoleForUserSuccess" type="redirect">/basicInfo/competence/roleForUserList.jsp</result>
        </action>
        <action name="deleteRoleForUser" class="userCompetenceAction" method="deleteRoleForUser">
          <result name="success" type="dispatcher">/basicInfo/competence/roleForUserList.jsp</result>
@@ -16,7 +16,7 @@
            <result name="success" type="dispatcher">/basicInfo/competence/displayModifyRoleMenu.jsp</result>
        </action>
        <action name="modifyRoleOwnedMenus" class="userCompetenceAction" method="modifyRoleOwnedMenus">
-           <result name="success" type="dispatcher">/basicInfo/competence/roleForUserList.jsp</result>
+           <result name="success" type="redirect">/basicInfo/competence/roleForUserList.jsp</result>
        </action>
        <action name="displayUserOwnedRoles" class="userCompetenceAction" method="displayUserOwnedRoles">
            <result name="success" type="dispatcher">/basicInfo/competence/displayRoleUser.jsp</result>
@@ -27,7 +27,7 @@
            <result name="success" type="dispatcher">/basicInfo/competence/displaySeletedRoleMenuForUser.jsp</result>
        </action>
        <action name="assignRoleForUser" class="userCompetenceAction" method="assignRoleForUser">
-           <result name="success" type="dispatcher">/basicInfo/user/user.jsp</result>
+           <result name="success" type="dispatcher">/employee/employee.jsp</result>
        </action>
        <action name="displayMinChangeAssignedRoleMenus" class="userCompetenceAction" method="displayMinChangeAssignedRoleMenus">
            <result name="success" type="dispatcher">/basicInfo/competence/displayMinChangeSelectedRoleMenuForUser.jsp</result>
@@ -39,10 +39,10 @@
            <result name="success" type="dispatcher">/basicInfo/competence/displayModifyUserOwnedRoles.jsp</result>
        </action>
         <action name="modifiyUserRole" class="userCompetenceAction" method="modifiyUserRole">
-           <result name="success" type="dispatcher">/basicInfo/competence/displayModifyUserRoleMenus.jsp</result>
+           <result name="success" type="redirect">/basicInfo/competence/displayModifyUserRoleMenus.jsp</result>
        </action>
         <action name="modifyUserRoleSecondStep" class="userCompetenceAction" method="modifyUserRoleSecondStep">
-           <result name="success" type="dispatcher">/basicInfo/user/user.jsp</result>
+           <result name="success" type="dispatcher">/employee/employee.jsp</result>
        </action>
         <action name="checkUserRoleName" class="userCompetenceAction" method="checkUserRoleName">
            <result  type="json"></result>

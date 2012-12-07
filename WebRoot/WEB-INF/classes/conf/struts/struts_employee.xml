@@ -13,7 +13,8 @@
 
 		<!-- 添加销售代表-->
 		<action name="add" class="employeeAction" method="addEmployee">
-			<result name="success" type="json">
+			<result name="success" type="redirect" >
+			/employee/employee.jsp
 			</result>
 		</action>
 
@@ -23,9 +24,14 @@
 			</result>
 		</action>
 
-		<!-- 根据ID获取销售代表 -->
-		<action name="get" class="employeeAction" method="getEmployeeById">
-			<result name="success" type="json">
+		<action name="prepareUpdate" class="employeeAction" method="prepareUpdate">
+			<result name="success" >
+			/employee/employeeEdit.jsp
+			</result>
+		</action>
+		<action name="update" class="employeeAction" method="update">
+			<result name="success" type="redirect">
+			/employee/employee.jsp
 			</result>
 		</action>
 	</package>

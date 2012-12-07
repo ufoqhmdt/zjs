@@ -6,6 +6,7 @@
 	<bean id="doctorAction" class="com.jung.doctor.action.DoctorAction" singleton="false"/>
 	<bean id="employeeAction" class="com.jung.employee.action.EmployeeAction" singleton="false"/>
 	<bean id="userCompetenceAction" class="com.jung.competence.action.UserCompetenceAction" singleton="false"></bean>
+	<bean id="regionAction" class="com.jung.region.action.RegionAction" singleton="false"/>
 	
 	
 	
@@ -14,10 +15,11 @@
 			<list>
 <!--				<ref bean="userService"></ref>-->
 <!--				<ref bean="newsService"></ref>-->
-<!--				<ref bean="doctorService"></ref>-->
-<!--				<ref bean="employeeService"></ref>-->
+					<ref bean="doctorService"></ref>
+					<ref bean="employeeService"></ref>
 					<ref bean="userCompetenceService"></ref>
 					<ref bean="roleForUserService"></ref>
+					<ref bean="regionService"></ref>
 			</list>
 		</property>
 	</bean>
